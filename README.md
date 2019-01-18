@@ -1,40 +1,30 @@
-# Hardcore React Training
+# Hardcore Basic Training
 
 ## Introduction
 
-Welcome to my two-day hardcore React Workshop. It is very important
+Welcome to my two-day hardcore Basics JavaScript Client + Server Workshop. It is _very important_
 that you read and follow these instructions before the actual two training days.
 
 ## Installation
 
-Start by forking / cloning this repository.
+Start by forking / cloning this repository from Github.
 
-If you don't know how to use git, you should spend an hour to [learn the basics](https://guides.github.com/introduction/git-handbook/)!
+If you don't know how to use Git, you should spend an hour to [learn the basics](https://guides.github.com/introduction/git-handbook/)!
 
 If you really don't want to use / learn git, just download the repo.
 
-`training` is the default branch that contains the starting point for
-our course. The `master` branch contains a fuller example application that might be
-up to date or not, depending on the phases of the moon and the planets.
-
-There are other branches too. They contain all the stuff from all the previous trainings. Interesting stuff, at least if you're me!
-
 ## Human Requirements
 
-- You are a developer, devsigner or such.
-- You have working professional knowledge on JavaScript, HTML and CSS. You don't have to be a guru, but the course is not suitable for beginners.
+- You are a developer.
+- You have working knowledge on programming in general. It helps to have a basic understanding of JavaScript, HTML, CSS and the general principles of the web and web applications (client / server model, HTTP protocol etc).
 
 ## Computer Requirements
 
-- MacOS and Linux are grade A citizens. Should work in Windows too, but I don't
-  always test because I'm not a Windows man myself.
-- If it doesn't work, just use a Unix virtual machine.
-- The current version of node.js (8 and 10 should both work). Might work on older / newer / other ones, but no guarantees!
+- MacOS and Linux are grade A citizens. This should work in Windows too, but the web isn't for Windows so results may vary. If it doesn't work, just use a Unix virtual machine!
+- The current version of node.js (series 10 stable LTS for example). Might work on older / newer / other ones, but no guarantees!
 - The [Yarn package manager](https://yarnpkg.com).
-- An editor / IDE that supports the good stuff. I use [VSCode](https://code.visualstudio.com/)
-  myself nowadays, and it's really good. [Atom](https://atom.io/) is OK too.
-  - Some alternatives: Nuclide, WebStorm, Eclipse, Sublime Text, whatever. Just make sure you get all the syntax and code helps etc.
-- Chrome browser. Or some other good dev browser.
+- An editor / IDE that supports all the good stuff. If you don't absolutely know better, please install [VSCode](https://code.visualstudio.com/). It's da best.
+- Chrome (or Firefox) as a development browser.
 
 ### Browser extensions
 
@@ -53,26 +43,13 @@ If you use VSCode, you must install at least the following extensions.
 - PostCSS syntax
 - vscode-styled-components
 
-[Check this screenshot!](https://www.dropbox.com/s/mujeklatlr30ciy/Screenshot%202018-07-30%2013.39.07.png?dl=0)
-
-### Atom packages
-
-If you use Atom, you must install at least the following packages.
-
-- linter
-- linter-eslint
-- language-babel
-- language-postcss
-- prettier-atom
-
 ## Howto
 
 The software is divided into two subfolders. `client` has the client side
-code (our main dish). `server` contains a simple Express app to act as
-a backend for our training session.
+code. `server` contains a server side skeleton for our work with the server side stuff.
 
-Commands are always run in either of these folders. Not in the common
-root folder.
+Commands are always run in either of these folders, not in the common
+root folder of the project.
 
 While preparing for the training session, you must follow the _development mode_ path
 until you reach the situation in [this screenshot](https://www.dropbox.com/s/np9dsnil0p7jny7/Screenshot%202018-08-16%2014.07.12.png?dl=0).
@@ -85,14 +62,17 @@ until you reach the situation in [this screenshot](https://www.dropbox.com/s/np9
 - `yarn`
 - `cp .env.example .env`
 - `yarn run start`
-  - open browser and go to http://localhost:8888
+  - open your browser and go to http://localhost:8888
+
+You should get a nice welcoming message saying something like "Welcome to React training".
 
 ### server
 
 - `cd server`
 - `yarn`
-- `cp .env.example .env`
 - `yarn run start`
+
+You should get just a repeating "hellurei" on the terminal screen.
 
 ## Build
 
@@ -101,30 +81,3 @@ until you reach the situation in [this screenshot](https://www.dropbox.com/s/np9
 The app builds to `dist/` (client code) and `dist-server` (server side rendering) folder.
 
 - `yarn run build`
-
-### server side rendering
-
-- `cd client`
-- `yarn run build`
-- `node dist-server/index.js`
-
-## Food for thought
-
-This repository uses my own [broilerplate](https://github.com/pekkis/broilerplate)
-to kickstart a React project with sane defaults, necessary tooling and reusable,
-copy-paste-preventing stuff. It's exactly the same kit I build my own stuff on.
-
-I recommend, though, to also check out the [create-react-app](https://github.com/facebookincubator/create-react-app) boilerplate
-instead of my broilerplate. If it suits you, you might want to use it. Personally, I think it's inadequate, and do not agree with it's philosophy.
-You basically always have to eject, and then you're on your own as here.
-
-With Broilerplate, I aim to get all the advantages and none of the disadvantages.
-Only future will tell whether this is sane.
-
-[react-app-rewired](https://github.com/timarney/react-app-rewired) tries to
-do the same. You might want to check it too.
-
-## Licensing
-
-Use as you wish. Read the license from LICENSE.
-# hardcore-basic-training
