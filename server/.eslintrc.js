@@ -11,5 +11,8 @@ module.exports = {
     "node/style-guide",
     "plugin:prettier/recommended"
   ],
+  rules: {
+    "import/no-commonjs": 0
+  },
   parser: "babel-eslint"
 };
